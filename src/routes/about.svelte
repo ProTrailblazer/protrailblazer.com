@@ -15,29 +15,33 @@
 </script>
 
 <svelte:head>
-	<title>About</title>
+	<title>About ProTrailblazer.com</title>
+	<meta name="description" content="About this app" />
 </svelte:head>
 
 <div class="content">
-	<h1>About this app</h1>
+	<h1>About ProTrailblazer.com</h1>
 
 	<p>
-		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
-		following into your command line and following the prompts:
+		My name is Ryan Murray and I am a freelance digital creative of 20+ years. My work is in a
+		variety of forms. These include:
 	</p>
 
-	<!-- TODO lose the @next! -->
-	<pre>npm init svelte@next</pre>
+	<ul>
+		<li>Fullstack Web Development</li>
+		<li>SEO Strategy</li>
+		<li>Product Photography</li>
+		<li>Motion Graphics</li>
+		<li>Game Development</li>
+		<li>Music Production</li>
+		<li>Video Post Production</li>
+		<li>Digital Illustration</li>
+	</ul>
 
 	<p>
-		The page you're looking at is purely static HTML, with no client-side interactivity needed.
-		Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
-		the devtools network panel and reloading.
-	</p>
-
-	<p>
-		The <a href="/todos">TODOs</a> page illustrates SvelteKit's data loading and form handling. Try using
-		it with JavaScript disabled!
+		Currently 100% of my offerings will be published on youtube: <a
+			href="https://www.youtube.com/channel/UCw_DRwblLZd7OF38mc9qFeg/videos">Subscribe Here</a
+		>
 	</p>
 </div>
 

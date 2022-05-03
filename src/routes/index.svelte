@@ -1,32 +1,21 @@
-<script context="module">
+<script context="module" lang="ts">
 	export const prerender = true;
 </script>
 
-<script>
-	import Counter from '$lib/Counter.svelte';
-</script>
-
 <svelte:head>
-	<title>Home</title>
+	<title>ProTrailblazer.com</title>
+	<meta name="description" content="ProTrailblazer.com" />
 </svelte:head>
 
 <section>
-	<h1>
-		<div class="welcome">
+	<div class="youtube">
+		<a href="https://www.youtube.com/channel/UCw_DRwblLZd7OF38mc9qFeg">
 			<picture>
-				<source srcset="svelte-welcome.webp" type="image/webp" />
-				<img src="svelte-welcome.png" alt="Welcome" />
+				<source srcset="youtube.svg" type="image/svg" />
+				<img src="youtube.svg" alt="youtube" />
 			</picture>
-		</div>
-
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/index.svelte</strong>
-	</h2>
-
-	<Counter />
+		</a>
+	</div>
 </section>
 
 <style>
@@ -38,22 +27,10 @@
 		flex: 1;
 	}
 
-	h1 {
-		width: 100%;
-	}
-
-	.welcome {
+	.youtube {
 		position: relative;
-		width: 100%;
+		margin: 0 auto;
 		height: 0;
 		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
 	}
 </style>

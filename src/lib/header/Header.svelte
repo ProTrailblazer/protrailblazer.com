@@ -1,11 +1,11 @@
-<script>
+<script lang="ts">
 	import { page } from '$app/stores';
-	import logo from './svelte-logo.svg';
+	import logo from './youtube.svg';
 </script>
 
 <header>
 	<div class="corner">
-		<a href="https://kit.svelte.dev">
+		<a href="https://www.youtube.com/channel/UCw_DRwblLZd7OF38mc9qFeg/videos">
 			<img src={logo} alt="SvelteKit" />
 		</a>
 	</div>
@@ -19,8 +19,8 @@
 			<li class:active={$page.url.pathname === '/about'}>
 				<a sveltekit:prefetch href="/about">About</a>
 			</li>
-			<li class:active={$page.url.pathname === '/todos'}>
-				<a sveltekit:prefetch href="/todos">Todos</a>
+			<li class:active={$page.url.pathname === '/contact'}>
+				<a sveltekit:prefetch href="/contact">Contact</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
@@ -32,6 +32,14 @@
 		<!-- TODO put something else here? github link? -->
 	</div>
 </header>
+<h1>
+	<div class="welcome">
+		<picture>
+			<source srcset="svelte-welcome.webp" type="image/webp" />
+			<img src="svelte-welcome.png" alt="Welcome" />
+		</picture>
+	</div>
+</h1>
 
 <style>
 	header {
@@ -120,5 +128,32 @@
 
 	a:hover {
 		color: var(--accent-color);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex: 1;
+	}
+
+	h1 {
+		width: 100%;
+	}
+
+	.welcome {
+		position: relative;
+		width: 100%;
+		height: 0;
+		padding: 0 0 calc(100% * 495 / 2048) 0;
+	}
+
+	.welcome img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		display: block;
 	}
 </style>
